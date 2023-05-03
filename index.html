@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Skranji&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,167 +17,30 @@
     <div class="wrapper">
         <aside>
             <ul class="menu">
-                <li><button class="boton-menu boton-categoria">Todos los productos</button></li>
-                <li><button class="boton-menu boton-categoria">Guitarra Criolla</button></li>
-                <li><button class="boton-menu boton-categoria">Guitarra Acustica</button></li>
-                <li><button class="boton-menu boton-categoria">Guitarra Electroacustica</button></li>
-                <li><button class="boton-menu boton-categoria">Guitarra Electrica</button></li>
-                <li">
-                    <a class="boton-menu boton-carrito" href="./carrito.html"></a>
-                    </li>
+                <li><button id="todos" class="boton-menu boton-categoria active">Todos los productos</button></li>
+                <li><button id="criolla" class="boton-menu boton-categoria">Guitarras Criollas</button></li>
+                <li><button id="acustica" class="boton-menu boton-categoria">Guitarras Acusticas</button></li>
+                <li><button id="electroacustica" class="boton-menu boton-categoria">Guitarras Electroacusticas</button></li>
+                <li><button id="electrica" class="boton-menu boton-categoria">Guitarras Electricas</button></li>
             </ul>
+            <li>
+                <a  href="./carrito.html"><button class="boton-menu boton-carrito">Carrito</button></a>
+            </li>
         </aside>
         <main>
-            <h2 class="titulo-principal">Todos los productos</h2>
-            <div class="contenedor-productos">
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="./guitar-images/guitarra-acustica/Guitarra-Acustica-Cort.png" class="producto-imagen"
-                        alt="...">
-                    <div class="productos-detalles">
-                        <h5 class="productos-titulo">Guitarra Acustica Cort</h5>
-                        <p class="producto-precio">125.000$</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+               
             </div>
         </main>
     </div>
 
 
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
@@ -199,7 +63,6 @@
                                 <a href="#" class="btn btn-primary ml-auto">Agregar al carrito</a>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </di
         </section>
     </main> -->

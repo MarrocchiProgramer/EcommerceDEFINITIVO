@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
+
 :root{
     --clr-oscuro:#0D1B2A;
     --clr-oscuro-claro:#1B263B;
@@ -43,6 +44,7 @@ a{
 }
 
 header{
+    position: sticky;
     width: 100%;
     height: 20%;
     border: 1px solid black;
@@ -60,10 +62,10 @@ header{
 aside{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     position: sticky;
     width: 20%;
-    padding: 1rem;
+    padding: 2rem;
     top: 0;
     height: 100vh;
     border: 1px solid black;
@@ -85,24 +87,62 @@ main{
     background-color: #778DA9;
 }
 
+.boton-menu{  
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    letter-spacing: -1px;
+    border-bottom: 2px solid #000000;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #6ab1d7 50%, #a1c4fd 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.3s ease-out;
+}
+
+.boton-menu.active{
+    background-color: white;
+    background-position: left bottom;
+    color: white;
+}
+
 .titulo-principal{
     margin-bottom: 1rem;
+    font-family: 'Skranji', cursive;
+    font-size: 3rem;
+    
 }
 
 .contenedor-productos{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
 }
 
 .producto{
-    border: 1px solid black;
+    border: 1px solid #666;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
 }
 
 .producto-imagen{
-    max-width: 100%;
-    height: 200px;
-    padding: 2px;
+    height: 100%; /* altura fija para la imagen */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    padding: 5px;
+}
+
+.productos-titulo{
+    margin: 3px;
+}
+.productos-precio{
+    margin: 3px;
 }
 
 .productos-detalles{
@@ -110,8 +150,24 @@ main{
     flex-direction: column;
     background-color: var(--clr-claro);
     margin-top: 5px;
-    padding: 5px;
+    padding: 15px;
     gap: .25rem;
+}
+
+.productos-agregar{
+    padding: 8px;
+    border: none;
+    border: 2px solid #666;
+    color: var(--clr-claro);
+    background-color: var(--clr-claro-oscuro);
+    border-radius: 3px;
+}
+
+.productos-agregar:hover{
+    color: white;
+    background-color: var(--clr-oscuro);
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.2s ease-in-out;
 }
 
 /* Empieza CARRITO */
@@ -146,6 +202,7 @@ main{
 .carrito-producto small {
     font-size: .75rem;
 }
+
 
 
 .carrito-acciones {
